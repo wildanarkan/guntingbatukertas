@@ -22,6 +22,9 @@ class HomeActivity : ComponentActivity() {
             val intent = Intent(this@HomeActivity, GameActivity::class.java)
             startActivity(intent)
         }
+        exitButton.setOnClickListener {
+            finish()
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
