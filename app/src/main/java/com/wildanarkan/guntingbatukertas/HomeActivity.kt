@@ -25,6 +25,11 @@ class HomeActivity : ComponentActivity() {
         exitButton.setOnClickListener {
             finish()
         }
+
+        contactButton.setOnClickListener {
+            val intent = Intent(this@HomeActivity, ContactActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
